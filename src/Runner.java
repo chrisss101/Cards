@@ -23,8 +23,11 @@ public class Runner {
         points[4] = 4;
         Deck Deck1 = new Deck(suits,ranks,points);
 
-        for (int i = 0; i < Deck.Dealt.size(); i++) {
+        for (int i = 0; i < Deck.unDealt.size(); i++) {
             Deck.Deal(Deck.unDealt.get(i));
+        }
+        for (int j = 0; j < Deck.unDealt.size(); j++) {
+            Deck.Printt(Deck.Dealt.get(j));
         }
 
     }

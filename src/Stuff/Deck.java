@@ -51,4 +51,7 @@ public class Deck {
            // unDealt.get(ran2) = place;
         }
    }
+   public static void Printt(Card printed) {
+        System.out.println("rank " + printed.rank + " suit " + printed.suit + " number " + String.valueOf(printed.positiveValue));
+   }
 }
