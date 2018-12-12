@@ -33,4 +33,18 @@ public class Deck {
        unDealt.remove(toDeal);
        return toDeal;
    }
+   public void Shuffle() {
+        for (int i = 0; i < Dealt.size(); i++) {
+            unDealt.add(Dealt.get(i));
+            Dealt.remove(i);
+        }
+        for (int j = 40;j > 0;j--) {
+            Card place;
+            int ran1 =  (int)Math.floor(Math.random() * unDealt.size()-1);
+            int ran2 =  (int)Math.floor(Math.random() * unDealt.size()-1);
+            //place =  unDealt.get(ran1);
+           // unDealt.get(ran1) = unDealt.get(ran2);
+           // unDealt.get(ran2) = place;
+        }
+   }
 }
