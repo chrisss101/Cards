@@ -1,3 +1,5 @@
+package Stuff;
+
 public class Card {
     public String rank;
     public String suit;

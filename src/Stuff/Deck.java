@@ -1,8 +1,12 @@
+package Stuff;
+
+import Stuff.Card;
+
 import java.util.ArrayList;
 
 public class Deck {
-    ArrayList<Card> Dealt;
-    ArrayList<Card> unDealt;
+    public static ArrayList<Card> Dealt;
+    public static ArrayList<Card> unDealt;
 
     int[] point = new int[6];
 
@@ -28,7 +32,7 @@ public class Deck {
    public int size() {
         return unDealt.size();
    }
-   public Card Deal(Card toDeal) {
+   public static Card Deal(Card toDeal) {
         Dealt.add(toDeal);
        unDealt.remove(toDeal);
        return toDeal;
